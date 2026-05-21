@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.ticker {
+    @apply text-center text-sky-950 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase
+}
+
+.fr {
+    @apply flex flex-row
+}
+
+.fc {
+    @apply flex flex-col
+}
+
+.policies_headers {
+    @apply text-neutral-900 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase sm:leading-relaxed
+}
+
+.mobile_header {
+    @apply sm:hidden bg-blue-100 w-full fixed top-0 h-14 rounded-b-[20px]
+    shadow-lg justify-between items-center inline-flex z-40
+}
+.required_title {
+    @apply pl-4 text-xl font-bold text-rose-600 font-['Roboto']
+}
+.input {
+    @apply text-base font-normal font-['Roboto']
+    py-4 w-full bg-blue-100 border-b border-slate-300
+    focus:placeholder:text-slate-400 outline-0 focus:placeholder:pl-4
+    sm:placeholder:hover:text-zinc-700
+}
+.input_error {
+    @apply text-base font-normal font-['Roboto']
+    py-4 w-full bg-blue-100 border-b border-slate-300
+    focus:placeholder:text-slate-400 outline-0 focus:placeholder:pl-4
+    sm:placeholder:hover:text-rose-600 placeholder-rose-600
+}
+
+.textarea {
+    @apply sm:placeholder:hover:text-zinc-700 text-base font-normal font-['Roboto']
+    py-4 w-full bg-blue-100 border-b border-slate-300  focus:placeholder:text-slate-400
+    outline-0 focus:placeholder:pl-4 h-40 sm:h-[128px] resize-none
+}
+.textarea_error {
+    @apply sm:placeholder:hover:text-rose-600 text-base font-normal font-['Roboto']
+    py-4 w-full bg-blue-100 border-b border-slate-300  focus:placeholder:text-slate-400
+    outline-0 focus:placeholder:pl-4 h-40 sm:h-[128px] resize-none placeholder-rose-600
+}
+.key_number {
+    @apply text-slate-300 text-lg font-bold font-['Syncopate'] uppercase
+}
+
+.footer_link {
+    @apply text-neutral-900 text-sm font-normal sm:text-base font-['Roboto'] py-4 hover:underline underline-offset-[10px]
+     duration-300
+}
+.red_underline {
+    @apply underline decoration-rose-600 underline-offset-[10px]
+}
+.pp_link {
+    @apply text-neutral-800 text-sm font-medium font-['Roboto'] leading-snug sm:text-base sm:text-neutral-900
+}
+
+.police_button {
+    @apply cursor-pointer text-slate-300 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px]
+    border border-slate-300 justify-center items-center gap-2.5 inline-flex
+}
+
+.active-police-button {
+    @apply cursor-pointer text-neutral-900 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px]
+    border border-neutral-900 justify-center items-center gap-2.5 inline-flex
+}
+
+.navbar_link {
+    @apply duration-300 hover:text-base hover:underline underline-offset-[10px] p-4 text-neutral-900 text-sm
+    font-normal font-['Roboto'] uppercase
+}
+
+.p_gray {
+    @apply text-slate-300 text-base font-medium font-['Roboto'] leading-relaxed
+}
+
+.navbar_p {
+    @apply text-neutral-900 text-sm font-normal font-['Roboto'] leading-snug
+}
+
+.black_button {
+    @apply border hover:bg-blue-100 duration-300 hover:text-neutral-900 hover:border border-neutral-900
+    cursor-pointer w-full text-center text-white text-sm sm:text-base font-normal font-['Roboto'] bg-neutral-900
+    rounded-[100px] px-8 py-4
+}
+
+.floating_button {
+    @apply z-30 sm:hidden fixed bottom-4 right-4 border hover:bg-blue-100 duration-300 hover:text-neutral-900
+    hover:border border-neutral-900 cursor-pointer w-auto text-center text-white text-sm font-normal
+    font-['Roboto'] bg-neutral-900 rounded-[100px] px-8 py-4
+}
+
+.active {
+    @apply duration-300 underline underline-offset-[10px]
+}
+
+.header_link {
+    @apply duration-300 hover:underline underline-offset-[10px] sm:text-neutral-900 sm:text-base sm:hover:animate-link-hover
+    sm:font-normal sm:font-['Roboto'] sm:uppercase
+}
+.notes_p {
+    @apply text-white text-xl font-medium font-['Roboto'] leading-loose
+}
+.faq_button {
+    @apply
+    /*hover:border-white hover:border-opacity-60 hover:bg-white hover:bg-opacity-20 hover:text-white */
+    duration-300
+     self-start px-4 py-2 sm:py-4 bg-slate-300 bg-opacity-10 rounded-[100px] border
+    border-slate-300 border-opacity-80 justify-center items-center flex text-light_blue text-sm
+    sm:text-base font-normal font-['Roboto'] uppercase whitespace-nowrap
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+body {
+    font-family: 'Syncopate', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    background-color: #D9E6F9;
+
+}
+
+.gray_button {
+    @apply  text-white text-sm sm:text-base font-normal font-['Roboto'] uppercase
+    px-4 py-2 sm:py-4 bg-white bg-opacity-20 rounded-[100px] border border-white border-opacity-80
+    justify-center items-center
+}
+
+.blue_span {
+    @apply text-light_blue text-2xl sm:text-[32px] font-medium font-['Roboto'] leading-[38.40px]
+    sm:leading-[51.20px]
+}
+
+h5 {
+    @apply text-dark_blue text-sm sm:text-base font-medium font-['Roboto'] leading-snug sm:leading-relaxed
+}
+
+h4 {
+    @apply text-neutral-900 text-base sm:text-xl font-medium font-['Roboto'] leading-relaxed sm:leading-loose
+}
+
+ol {
+    @apply text-zinc-700 text-sm font-normal font-['Roboto'] leading-snug
+}
+
+h3 {
+    @apply text-sky-950 text-2xl sm:text-[32px] font-medium font-['Roboto'] leading-[38.40px]
+    sm:leading-[51.20px]
+}
+
+h2 {
+    @apply text-neutral-900 sm:text-2xl text-lg font-bold font-['Syncopate']
+}
+
+h1 {
+    @apply w-[328px] text-neutral-900 text-5xl font-bold font-['Syncopate'] uppercase
+}
+
+.description_number {
+    @apply text-center text-slate-300 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase
+}
+
+p {
+    @apply text-zinc-700 text-sm sm:text-base font-normal font-['Roboto'] leading-snug sm:leading-relaxed
+}
+
+code {
+    font-family: sourse-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+svg {
+    display: flex;
+    align-items: center;
+}
+
+/*! Flickity v2.3.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+    position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 500px;
+}
+
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+
+    cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+
+    cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.75);
+    border: none;
+    color: #333;
+}
+
+.flickity-button:hover {
+    background: white;
+    cursor: pointer;
+}
+
+.flickity-button:focus {
+    /*outline: none;*/
+    /*box-shadow: 0 0 0 5px #19F;*/
+}
+
+.flickity-button:active {
+    opacity: 0.6;
+}
+
+.flickity-button:disabled {
+    opacity: 0.3;
+    cursor: auto;
+    /* prevent disabled button from capturing pointer up event. #716 */
+    pointer-events: none;
+}
+
+.flickity-button-icon {
+    fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+    top: 110%;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    /* vertically center */
+    transform: translateY(-40%);
+}
+
+.flickity-prev-next-button.previous { left: 170px;}
+.flickity-prev-next-button.next { right: 305px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+    left: auto;
+    right: 30px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 20px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -35px;
+    right: -270px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: #333;
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+    opacity: 1;
+}
+
