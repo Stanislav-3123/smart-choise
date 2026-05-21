@@ -17,7 +17,7 @@ function App() {
             <FloatingButton/>
             <Header/>
             <Routes>
-                <Route path='/' element={<Home/>}/>
+                <Route path='/smart-choise' element={<Home/>}/>
                 <Route path='/contacts' element={<ContactsPage/>}/>
                 <Route path='/policies' element={<PoliciesPage/>}/>
             </Routes>
